@@ -13,6 +13,10 @@ export class Connector {
     // - https://docs.powersync.com/usage/installation/authentication-setup/supabase-auth
     // - https://docs.powersync.com/usage/installation/authentication-setup/firebase-auth
 
+    console.log('SALDIRIYORUM')
+    console.log(import.meta.env.VITE_POWERSYNC_URL)
+    console.log(import.meta.env.VITE_POWERSYNC_APIKEY)
+
     // Use a development token (see Authentication Setup https://docs.powersync.com/usage/installation/authentication-setup/development-tokens) to get up and running quickly
     return {
       endpoint: import.meta.env.VITE_POWERSYNC_URL,
